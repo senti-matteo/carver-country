@@ -21,7 +21,8 @@ body {
     background-color: var(--background-black);
 }
 
-.header__inner,
+
+
 .main-content__hgroup,
 .books {
     max-width: 800px;
@@ -29,8 +30,14 @@ body {
     padding: 10px;
 }
 
+section .full-1320 {
+    max-width:1320px;
+    background-color: red;
+}
+
 .header__inner {
     display: flex;
+    flex-direction: column;
     align-items: center;
     justify-content: space-between;
     padding-top: 20px; 
@@ -42,14 +49,27 @@ body {
     height: 100%;
 }
 
+.header__inner nav{
+    width: 100%;
+}
+
 .header__inner nav ul {
     display: flex;
     gap: 44px;
     padding-left: 0px;
+    padding: 5px 0px;
+    justify-content: center;
+    border-bottom: 1px solid rgba(255, 255, 255, 0.15);
+    border-top: 1px dotted rgba(255, 255, 255, 0.15);
+
+
+
 }
 
 .header__inner nav ul li {
     list-style: none;
+    transition: transform .6s;
+
 }
 
 .header__inner nav ul li a {
@@ -59,6 +79,11 @@ body {
     text-transform: uppercase;
     font-size: 0.9rem;
     letter-spacing: 1px;
+
+}
+
+.header__inner nav ul li:hover {
+    transform: scale(1.1);
 }
 
 .menu-toggle {
@@ -155,18 +180,15 @@ body {
     /* flex-wrap: wrap; */
 }
 
-.main-books-cover__image{
-    /* max-width: 180px; */
-}
+/* .main-books-cover__image{
+    /* max-width: 180px;} */
+
 
 .main-books-cover__image img{
     width: 100%;
     height: 100%;
 
 }
-
-
-
 
 /* Main - Section - Books --------------------------------- */
 
@@ -304,6 +326,15 @@ button a {
 .book-card__text h2 {
     margin: 0;
 } */
+
+
+
+/* Footer --------------------------------- */
+
+.footer-main{
+    background-color: black;
+    height: 300px;
+}
 
 @media (max-width:720px) {
     .main__section-full {
