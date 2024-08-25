@@ -46,7 +46,7 @@ section .full-1320 {
 
 .header-logo {
     width: 120px;
-    height: auto%;
+    height: auto;
 }
 
 .header__inner nav{
@@ -113,8 +113,14 @@ section .full-1320 {
     color: var(--text-white);
 }
 
-.full__reverse{
+.full__reverse img{
     flex-direction: row-reverse;
+    display: none;
+}
+
+.main-content .full__reverse div{
+    max-width: none;
+    padding: 30px 30px 15px 30px;
 }
 
 .main__section-full img {
@@ -151,6 +157,9 @@ section .full-1320 {
     font-size: 1.2rem;
 }
 
+b{
+    font-weight: 600;
+}
 
 /* Main content --------------------------------- */
 
@@ -162,15 +171,16 @@ section .full-1320 {
 
 .main-content h1 {
     font-size: 1.8rem;
-    font-family: 'Lora', sans-serif;
-    font-weight: 200;
+    font-weight: 600;
     margin: 0px;
-
 }
 
+
 .main-content p {
-    font-weight: 300;
+    font-weight: 200;
     font-size: 1.2rem;
+    font-family: 'Lora', sans-serif;
+
 }
 
 
