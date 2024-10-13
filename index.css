@@ -31,7 +31,7 @@ body {
 }
 
 section .full-1320 {
-    max-width:1320px;
+    max-width: 1320px;
     background-color: red;
 }
 
@@ -40,7 +40,7 @@ section .full-1320 {
     flex-direction: column;
     align-items: center;
     justify-content: space-between;
-    padding-top: 20px; 
+    padding-top: 20px;
     padding-bottom: 20px;
 }
 
@@ -49,7 +49,7 @@ section .full-1320 {
     height: auto;
 }
 
-.header__inner nav{
+.header__inner nav {
     width: 100%;
 }
 
@@ -113,19 +113,26 @@ section .full-1320 {
     color: var(--text-white);
 }
 
-.full__reverse img{
-    flex-direction: row-reverse;
-    display: none;
+.full__reverse {
+    height: 300px;
 }
 
-.main-content .full__reverse div{
+
+.main-content .full__reverse div {
     max-width: none;
     padding: 30px 30px 15px 30px;
+    font-size: 1rem;
 }
 
 .main__section-full img {
     width: 50%;
     object-fit: contain;
+}
+
+.full__reverse img {
+    flex-direction: row-reverse;
+    height: 100%;
+    width: 100%;
 }
 
 .main__section-full div {
@@ -138,7 +145,7 @@ section .full-1320 {
     font-size: 1.3rem;
     font-weight: 300;
     gap: 20px;
-    max-width: 600px ;
+    max-width: 600px;
 }
 
 .main__section-full p {
@@ -157,13 +164,13 @@ section .full-1320 {
     font-size: 1.2rem;
 }
 
-b{
+b {
     font-weight: 600;
 }
 
 /* Main content --------------------------------- */
 
-.main-content__hgroup{
+.main-content__hgroup {
     /* border: 1px solid red; */
     margin-top: 50px;
     margin-bottom: 50px;
@@ -186,7 +193,7 @@ b{
 
 /* Main books --------------------------------- */
 
-.main-books-cover{
+.main-books-cover {
     display: flex;
     max-width: 100%;
     /* flex-wrap: wrap; */
@@ -196,7 +203,7 @@ b{
     /* max-width: 180px;} */
 
 
-.main-books-cover__image img{
+.main-books-cover__image img {
     width: 100%;
     height: 100%;
 
@@ -277,83 +284,17 @@ button a {
     text-decoration: none;
 }
 
-/* .books-grid {
-    display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
-    list-style: none;
-    padding-left: 0;
-    gap: 20px;
-    font-family: 'Playfair Display', sans-serif;
-}
-
-.book-card {
-    border: 1px solid rebeccapurple;
-    display: flex;
-    gap: 20px;
-    height: 100%;
-
-}
-
-.book-card__image {
-    padding: 0;
-    margin: 0px;
-    max-height: 389.5px;
-    height: 100%;
-}
-
-.book-card__image img {
-    margin: 0;
-    padding: 0;
-    height: 100%;
-    min-width: 200px;
-    object-fit: contain;
-}
-
-.book-card__content {
-    display: flex;
-    flex-direction: column;
-    justify-content: space-between;
-    margin: 0;
-}
-
-.book-card__meta-item span:first-child {
-    font-weight: 600;
-}
-
-button {
-    appearance: none;
-    border: 0;
-    background-color: var(--background-black);
-    width: fit-content;
-    padding: 10px 20px;
-    border-radius: 2px;
-}
-
-button a {
-    color: white;
-    text-decoration: none;
-    font-size: 1rem;
-}
-
-.book-card__text h2 {
-    margin: 0;
-} */
-
-
-
-/* Footer --------------------------------- */
-
-.footer-main{
+.footer-main {
     background-color: black;
     height: 300px;
     padding: 20px 20px 10px 20px;
     display: flex;
     flex-direction: column;
-    justify-content:space-between;
+    justify-content: space-between;
     align-items: center;
 }
 
-.footer-main__github{
+.footer-main__github {
     display: flex;
     color: white;
     justify-content: center;
@@ -361,16 +302,22 @@ button a {
     font-size: 0.9rem;
 }
 
-.footer-main .header-logo{
+.footer-main .header-logo {
     width: 150px;
 }
 
-.footer-main__github img{
+.footer-main__github img {
     height: 18px;
 }
 
 
 /* ------------------------------------------- */
+
+
+
+
+
+
 
 @media (max-width:720px) {
     .main__section-full {
