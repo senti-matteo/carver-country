@@ -13,6 +13,10 @@ body {
 :root {
     --background-black: black;
     --text-white: white;
+    --red: #BB2525;
+    --black: #333333;
+    --text: 'Crimson Pro;
+
 }
 
 
@@ -20,43 +24,43 @@ body {
 
 /* HEADER */
 
-.main-line{
+.main-line {
     display: flex;
     align-items: center;
     gap: 50px;
 }
 
-.header-main{
+.header-main {
     width: fit-content;
     max-width: 1440px;
     padding: 20px;
 }
 
-.header-main__logo{
+.header-main__logo {
     font-size: 5rem;
     font-weight: 800;
     margin: 0;
     line-height: 80%;
 }
 
-.header-main__nav{
+.header-main__nav {
     width: 100%;
     padding: 0px 0px;
 
-    ul{
+    ul {
         display: flex;
         justify-content: space-between;
         gap: 20px;
         padding: 0;
-        margin:0;
+        margin: 0;
     }
 
-    li{
+    li {
         list-style-type: none;
         margin: 0;
     }
 
-    a{
+    a {
         text-decoration: none;
         color: black;
         transition: underline 1s;
@@ -64,7 +68,7 @@ body {
 
     }
 
-    a:hover{
+    a:hover {
         /* background-color: black;
         color: white;
         border-radius: 1px; */
@@ -75,8 +79,8 @@ body {
 
 /* HEADER END */
 
-.above-section{
-    p{
+.above-section {
+    p {
         text-transform: uppercase;
     }
 }
@@ -84,11 +88,11 @@ body {
 
 /* FIRST SECTION */
 
-.white{
+.white {
     color: white;
 }
 
-.first-section{
+.first-section {
     height: calc(100vh - 144px);
     width: calc(100vw - 40px);
 
@@ -102,35 +106,35 @@ body {
     border-radius: 5px;
     overflow: hidden;
 
-    img{
+    img {
         width: 50%;
         height: 100%;
-        object-fit:cover;
+        object-fit: cover;
     }
 
-    div{
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    margin-left: auto;
-    margin-right: auto;
-    padding: 30px;
-    font-size: 1.3rem;
-    font-weight: 300;
-    gap: 20px;
-    max-width: 600px;
-
-    p:last-child {
+    div {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
         margin-left: auto;
-        color: var(--background-black);
-        background-color: var(--text-white);
-        transform: skewX(-8deg);
-        /* font-style: italic; */
-        padding: 0px 10px;
-        width: fit-content;
-        font-weight: 400;
-        font-size: 1.2rem;
-    }
+        margin-right: auto;
+        padding: 30px;
+        font-size: 1.3rem;
+        font-weight: 300;
+        gap: 20px;
+        max-width: 600px;
+
+        p:last-child {
+            margin-left: auto;
+            color: var(--background-black);
+            background-color: var(--text-white);
+            transform: skewX(-8deg);
+            /* font-style: italic; */
+            padding: 0px 10px;
+            width: fit-content;
+            font-weight: 400;
+            font-size: 1.2rem;
+        }
     }
 }
 
@@ -496,6 +500,130 @@ button a {
     .menu-toggle {
         display: none;
     }
+}
 
 
+
+/***** NEW ****/
+
+html {
+    margin: 0;
+    padding: 0;
+    color: var(--black);
+}
+
+.single-book {
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.single-book__card {
+    margin: auto;
+    display: flex;
+    align-items: center;
+    gap: 20px;
+}
+
+.single-book__content {
+    width: 770px;
+    margin: auto;
+    display: flex;
+    align-items: center;
+    gap: 40px
+}
+
+.single-book__arrow {
+    background-color: var(--red);
+    border-radius: 100px;
+
+    svg {
+        height: 22px;
+        width: 22px;
+        color: white;
+        display: block;
+        margin: auto;
+        margin: 5px;
+    }
+}
+
+.tra-30 {
+    opacity: 0.5;
+}
+
+.single-book__text {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    height: 100%;
+}
+
+.single-book__title {
+    font-family: 'Crimson Pro';
+    font-size: 2rem;
+}
+
+.single-book__author {
+    color: var(--red);
+    font-style: italic;
+    margin-top: 0px;
+}
+
+.single-book__price {
+    font-family: 'Crimson Pro';
+    font-size: 1.7rem;
+    border-top: 1px solid var(--red);
+    border-bottom: 1px solid var(--red);
+    width: fit-content;
+}
+
+.single-book__description {
+    color: #707070;
+}
+
+.single-book__button {
+    color: var(--red);
+    background-color: rgba(217, 217, 217, 0.4);
+    font-size: 1.05rem;
+    font-weight: 200;
+}
+
+.single-book__ISBN{
+    display: flex;
+    gap:5px;
+    font-size: 0.875rem;
+    color:#707070;
+    
+    p{
+        margin: 0;
+        margin-bottom: 3px;
+    }
+
+    & :last-child{
+        color: var(--red);
+    }
+}
+
+.single-book__datas {
+    width: 770px;
+    display: flex;
+    margin-bottom: auto;
+    background-color: rgba(217, 217, 217, 0.4);
+    border-radius: 5px;
+    padding: 30px 20px;
+    justify-content: space-between;
+
+    p{
+        margin: 0;
+        color:#707070;
+        font-size: 0.875rem;
+        font-weight: 300;
+
+    }
+    p:last-child{
+        color: var(--red);
+        font-size: 1rem;
+        font-style: italic;
+    }
 }
