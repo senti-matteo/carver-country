@@ -5,6 +5,8 @@
 body {
     margin: 0;
     font-family: 'Montserrat', sans-serif;
+    background-color: #f4f0e8;
+    max-width: 1920px;
 }
 
 /* Elenco variabili */
@@ -16,10 +18,124 @@ body {
 
 /* ------------------------------------------------------------- */
 
+/* HEADER */
 
-.header {
-    background-color: var(--background-black);
+.main-line{
+    display: flex;
+    align-items: center;
+    gap: 50px;
 }
+
+.header-main{
+    width: fit-content;
+    max-width: 1440px;
+    padding: 20px;
+}
+
+.header-main__logo{
+    font-size: 5rem;
+    font-weight: 800;
+    margin: 0;
+    line-height: 80%;
+}
+
+.header-main__nav{
+    width: 100%;
+    padding: 0px 0px;
+
+    ul{
+        display: flex;
+        justify-content: space-between;
+        gap: 20px;
+        padding: 0;
+        margin:0;
+    }
+
+    li{
+        list-style-type: none;
+        margin: 0;
+    }
+
+    a{
+        text-decoration: none;
+        color: black;
+        transition: underline 1s;
+        text-transform: uppercase;
+
+    }
+
+    a:hover{
+        /* background-color: black;
+        color: white;
+        border-radius: 1px; */
+        text-decoration: underline;
+        text-decoration-thickness: 2px;
+    }
+}
+
+/* HEADER END */
+
+.above-section{
+    p{
+        text-transform: uppercase;
+    }
+}
+
+
+/* FIRST SECTION */
+
+.white{
+    color: white;
+}
+
+.first-section{
+    height: calc(100vh - 144px);
+    width: calc(100vw - 40px);
+
+    display: flex;
+    background-color: var(--background-black);
+    color: var(--text-white);
+
+    margin-left: 20px;
+    margin-right: 20px;
+    margin-bottom: 20px;
+    border-radius: 5px;
+    overflow: hidden;
+
+    img{
+        width: 50%;
+        height: 100%;
+        object-fit:cover;
+    }
+
+    div{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    margin-left: auto;
+    margin-right: auto;
+    padding: 30px;
+    font-size: 1.3rem;
+    font-weight: 300;
+    gap: 20px;
+    max-width: 600px;
+
+    p:last-child {
+        margin-left: auto;
+        color: var(--background-black);
+        background-color: var(--text-white);
+        transform: skewX(-8deg);
+        /* font-style: italic; */
+        padding: 0px 10px;
+        width: fit-content;
+        font-weight: 400;
+        font-size: 1.2rem;
+    }
+    }
+}
+
+/* FIRST SECTION END */
+
 
 
 
