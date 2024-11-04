@@ -64,16 +64,16 @@ p {
 .main-section {
     background-color: var(--black);
     height: calc(100vh - 150px);
-    
+
 }
 
-.main-section__background{
+.main-section__background {
     display: flex;
     justify-content: center;
     align-items: center;
     height: 100%;
     background-image: url(https://cleaver.cue.rsi.ch/public/incoming/1780349-ihap0w-foto-copertina-CARVER.jpg/alternates/r16x9/1780349-ihap0w-foto-copertina-CARVER.jpg);
-    background-size:cover;
+    background-size: cover;
 }
 
 .main-section__content {
@@ -100,35 +100,35 @@ p {
         color: var(--black);
         background-color: white;
         transform: skew(-9deg);
-        
-        }
+
+    }
 }
 
 /*** MAIN PAGE ***/
 
-article{
+article {
     padding-top: 50px;
     padding-bottom: 50px;
 }
 
-.main-content{
-    width: 1000px;
+.main-content {
+    max-width: 1000px;
     margin-left: auto;
     margin-right: auto;
 
-    p{
+    p {
         font-size: 1.1rem;
         line-height: 30px;
     }
 }
 
 
-.book-cards__grey{
+.book-cards__grey {
     width: 100% !important;
     padding: 20px;
 }
 
-.aside-books{
+.aside-books {
     max-width: 1040px;
     margin-left: auto;
     margin-right: auto;
@@ -136,13 +136,13 @@ article{
     margin-top: 0px;
 }
 
-.books-aside{
+.books-aside {
     margin-top: 0px !important;
     background-color: rgba(217, 217, 217, 0.4);
     border-radius: 10px;
     margin-bottom: 0px !important;
 
-    h2{
+    h2 {
         margin: 0;
         font-family: 'Crimson Pro';
         font-size: 1.8rem;
@@ -151,13 +151,13 @@ article{
 
 }
 
-.books-aside__header{
+.books-aside__header {
     display: flex;
     justify-content: space-between;
     padding: 20px 20px 0px 40px;
     align-items: center;
 
-    a{
+    a {
         background-color: var(--red);
         color: white;
         border: none;
@@ -436,8 +436,8 @@ a {
     margin-top: 10px;
     overflow: hidden;
     max-height: 100px;
-    
-    p{
+
+    p {
         text-overflow: ellipsis;
         white-space: nowrap;
 
@@ -446,43 +446,58 @@ a {
 
 
 /*** FOOTER ***/
-footer{
+footer {
     background-color: var(--black);
     height: 200px;
     display: flex;
     flex-direction: column;
-    justify-content:space-between;
+    justify-content: space-between;
     align-items: center;
     padding-top: 30px;
     padding-bottom: 10px;
 
-    img{
+    img {
         height: 80px;
         width: fit-content;
     }
 
-    .github-logo{
+    .github-logo {
         width: 20px;
         height: auto;
     }
 
-    .github-text{
+    .github-text {
         width: 50px;
         height: auto;
     }
 
-    .footer-main__github{
+    .footer-main__github {
         display: flex;
         color: white;
         gap: 8px;
     }
 
-    .footer-main__link{
+    .footer-main__link {
         color: white;
         font-size: 0.75rem;
 
-        a:hover{
+        a:hover {
             color: var(--red);
         }
+    }
+}
+
+/*** MEDIA QUERY MOBILE ***/
+
+@media all and (max-width: 480px) {
+    .main-content {
+        width: ;
+        margin: 0px 10px;
+    }
+
+    .book-cards__grey{
+        overflow: scroll;
+        scrollbar-color: var(--red) black; 
+
     }
 }
