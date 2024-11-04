@@ -10,29 +10,174 @@ body {
     max-width: 1920px;
 }
 
-h1,h2,h3,h4,h5,p{
+h1,
+h2,
+h3,
+h4,
+h5,
+p {
     margin: 10px 0px;
 }
 
 /* Elenco variabili */
 :root {
-    --background-black: black;
     --text-white: white;
     --red: #BB2525;
-    --black: #333333;
+    --black: #232323;
 }
-/* ------------------------------------------------------------- */
+
+/*** HEADER ***/
+
+.header {
+    background-color: var(--black);
+    padding: 20px;
+    color: white;
+
+    .header__img {
+        display: block;
+        height: 80px;
+        margin-left: auto;
+        margin-right: auto;
+    }
+
+    .header__menu {
+        padding: 0;
+        margin: 0;
+        margin-top: 10px;
+
+        ul {
+            display: flex;
+            gap: 20px;
+            justify-content: center;
+            padding: 0;
+        }
+
+        li {
+            list-style: none;
+            margin-left: 0;
+            font-style: italic;
+        }
+    }
+
+}
+
+.main-section {
+    background-color: var(--black);
+    height: calc(100vh - 150px);
+    
+}
+
+.main-section__background{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+    background-image: url(https://cleaver.cue.rsi.ch/public/incoming/1780349-ihap0w-foto-copertina-CARVER.jpg/alternates/r16x9/1780349-ihap0w-foto-copertina-CARVER.jpg);
+    background-size:cover;
+}
+
+.main-section__content {
+    color: white;
+    width: 1000px;
+    font-family: 'Crimson Pro';
+    font-size: 1.5rem;
+    text-align: center;
+    font-weight: 200;
+    padding-bottom: 140px;
 
 
-/***** NEW ****/
+    p {
+        margin: 0;
+        line-height: 35px;
+    }
+
+    p:last-child {
+        padding: 0px 10px;
+        margin-top: 20px;
+        margin-left: auto;
+        margin-right: auto;
+        width: fit-content;
+        color: var(--black);
+        background-color: white;
+        transform: skew(-9deg);
+        
+        }
+}
+
+/*** MAIN PAGE ***/
+
+article{
+    padding-top: 50px;
+    padding-bottom: 50px;
+}
+
+.main-content{
+    width: 1000px;
+    margin-left: auto;
+    margin-right: auto;
+
+    p{
+        font-size: 1.1rem;
+        line-height: 30px;
+    }
+}
 
 
+.book-cards__grey{
+    width: 100% !important;
+    padding: 20px;
+}
+
+.aside-books{
+    max-width: 1040px;
+    margin-left: auto;
+    margin-right: auto;
+    padding: 40px 0px;
+    margin-top: 0px;
+}
+
+.books-aside{
+    margin-top: 0px !important;
+    background-color: rgba(217, 217, 217, 0.4);
+    border-radius: 10px;
+    margin-bottom: 0px !important;
+
+    h2{
+        margin: 0;
+        font-family: 'Crimson Pro';
+        font-size: 1.8rem;
+        font-weight: 400;
+    }
+
+}
+
+.books-aside__header{
+    display: flex;
+    justify-content: space-between;
+    padding: 20px 20px 0px 40px;
+    align-items: center;
+
+    a{
+        background-color: var(--red);
+        color: white;
+        border: none;
+        border-radius: 5px;
+        padding: 8px 18px;
+        font-size: 1rem;
+        font-weight: 200;
+    }
+
+}
+
+
+
+/*** SINGLE BOOK and BOOK GRID ***/
 
 .single-book {
-    height: 100vh;
     display: flex;
     flex-direction: column;
     align-items: center;
+    padding: 50px 0px;
 }
 
 .single-book__card {
@@ -97,9 +242,9 @@ h1,h2,h3,h4,h5,p{
     justify-content: space-between;
 }
 
-.single-book__text>*:not(:last-child):not(:first-child) {
+/* .single-book__text>*:not(:last-child):not(:first-child) {
     margin-bottom: auto;
-}
+} */
 
 .single-book__title {
     font-family: 'Crimson Pro';
@@ -109,6 +254,7 @@ h1,h2,h3,h4,h5,p{
 .single-book__author {
     color: var(--red);
     font-style: italic;
+    margin-bottom: 20px !important;
 }
 
 .single-book__price {
@@ -117,11 +263,15 @@ h1,h2,h3,h4,h5,p{
     border-top: 1px solid var(--red);
     border-bottom: 1px solid var(--red);
     width: fit-content;
+    margin-bottom: 20px;
 }
 
 .single-book__description {
     color: #707070;
-    font-weight: 300;
+    font-weight: 200;
+    margin-bottom: auto;
+    font-size: 1rem;
+
 }
 
 .single-book__buy {
@@ -198,22 +348,23 @@ h1,h2,h3,h4,h5,p{
 /*** LIBRI ***/
 
 .books {
-    margin-top: 150px;
+    margin: 50px 0px
 }
 
 
-.books__text{
+.books__text {
     width: 1000px;
     margin: 50px auto;
 
 
-    h1{
+    h1 {
         font-family: 'Crimson Pro';
         font-size: 2rem;
     }
 
-    p{
+    p {
         margin: 0;
+        line-height: 30px;
     }
 
 
@@ -228,16 +379,16 @@ h1,h2,h3,h4,h5,p{
     gap: 50px 20px;
 }
 
-a{
-    text-decoration:none;
+a {
+    text-decoration: none;
     color: inherit;
 }
 
 .book-card {
     display: flex;
-    gap: 5px;
+    gap: 3px;
 
-    
+
 
     &:hover .book-card__title {
         color: var(--red);
@@ -252,12 +403,13 @@ a{
 .book-card__editor {
     font-size: 0.75rem;
 
+
     p {
         margin: 0;
         writing-mode: vertical-rl;
         transform: rotate(180deg);
         color: #CBCBCB;
-        transition: color 0.5s;   
+        transition: color 0.5s;
     }
 }
 
@@ -276,10 +428,52 @@ a{
     font-size: 1.2rem;
     font-weight: 600;
     transition: color 0.5s;
-    margin-top: 10px; 
+    margin-top: 10px;
 }
 
 .book-card_description {
     font-weight: 200;
     margin-top: 10px;
+    overflow: hidden;
+    max-height: 100px;
+    
+    p{
+        text-overflow: ellipsis;
+        white-space: nowrap;
+
+    }
+}
+
+
+/*** FOOTER ***/
+footer{
+    background-color: var(--black);
+    height: 200px;
+    display: flex;
+    flex-direction: column;
+    justify-content:space-between;
+    align-items: center;
+    padding-top: 30px;
+    padding-bottom: 10px;
+
+    img{
+        height: 80px;
+        width: fit-content;
+    }
+
+    .github-logo{
+        width: 20px;
+        height: auto;
+    }
+
+    .github-text{
+        width: 50px;
+        height: auto;
+    }
+
+    .footer-main__github{
+        display: flex;
+        color: white;
+        gap: 8px;
+    }
 }
