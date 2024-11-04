@@ -457,8 +457,8 @@ footer {
     padding-bottom: 10px;
 
     img {
+        display: block;
         height: 80px;
-        width: fit-content;
     }
 
     .github-logo {
@@ -500,4 +500,20 @@ footer {
         scrollbar-color: var(--red) black; 
 
     }
+
+    .main-section{
+        height: 100%;
+        margin-top: none;
+    }
+
+    .main-section__content {
+        padding-top: 60px;
+        padding-bottom: 60px;}
+
+    footer{
+        img{
+
+        }
+    }
+    
 }
