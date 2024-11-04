@@ -493,8 +493,11 @@ footer {
     }
 
     .book-cards__grey {
+        grid-template-columns: repeat(4, minmax(200px, 1fr)) !important;
+
         overflow: scroll;
         scrollbar-color: var(--red) black;
+
 
     }
 
@@ -558,4 +561,5 @@ footer {
     .single-book__descover-price{
         margin-top: 30px;
     }
+
 }
