@@ -476,4 +476,13 @@ footer{
         color: white;
         gap: 8px;
     }
+
+    .footer-main__link{
+        color: white;
+        font-size: 0.75rem;
+
+        a:hover{
+            color: var(--red);
+        }
+    }
 }
