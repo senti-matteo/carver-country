@@ -123,7 +123,7 @@ article {
 
 
 .book-cards__grey {
-    width: 100% !important;
+    width: 100%;
     padding: 20px;
 }
 
@@ -492,8 +492,8 @@ footer {
         padding: 0px 10px;
     }
 
-    .book-cards__grey {
-        grid-template-columns: repeat(4, minmax(200px, 1fr)) !important;
+    .book-cards.book-cards__grey {
+        grid-template-columns: repeat(4, minmax(200px, 1fr));
 
         overflow: scroll;
         scrollbar-color: var(--red) black;
