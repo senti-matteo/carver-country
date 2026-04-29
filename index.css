@@ -488,7 +488,6 @@ footer {
 
 @media all and (max-width: 480px) {
     .main-content {
-        width: ;
         padding: 0px 10px;
     }
 
